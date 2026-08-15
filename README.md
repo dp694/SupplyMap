@@ -272,9 +272,6 @@ adding either would misrepresent what the business can actually rely on:
 
 ## Screenshots
 
-Drop PNGs into `docs/screenshots/` with the filenames below and they'll render
-here automatically - no other edits needed.
-
 | Screen | File |
 | --- | --- |
 | Dashboard | `docs/screenshots/dashboard.png` |
