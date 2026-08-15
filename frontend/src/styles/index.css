@@ -50,9 +50,15 @@
 body {
   margin: 0;
   font-family: var(--font-sans);
-  background: radial-gradient(circle at 6% -8%, rgba(249, 115, 22, 0.07), transparent 38%),
-    radial-gradient(circle at 96% 8%, rgba(22, 163, 74, 0.06), transparent 34%),
-    radial-gradient(circle at 50% 115%, rgba(10, 25, 47, 0.05), transparent 45%), var(--color-bg);
+  background-color: var(--color-bg);
+  background-image: radial-gradient(circle at 6% 10%, rgba(249, 115, 22, 0.24), transparent 30%),
+    radial-gradient(circle at 94% 6%, rgba(22, 163, 74, 0.22), transparent 32%),
+    radial-gradient(circle at 12% 92%, rgba(22, 163, 74, 0.18), transparent 32%),
+    radial-gradient(circle at 90% 88%, rgba(249, 115, 22, 0.2), transparent 32%),
+    radial-gradient(circle at 50% 45%, rgba(30, 41, 59, 0.05), transparent 55%),
+    radial-gradient(circle, rgba(10, 25, 47, 0.05) 1px, transparent 1.6px);
+  background-size: auto, auto, auto, auto, auto, 26px 26px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
   background-attachment: fixed;
   color: var(--color-text);
   font-size: 15px;
