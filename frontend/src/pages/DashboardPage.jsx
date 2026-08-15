@@ -5,6 +5,7 @@ import { useApi } from "../hooks/useApi.js";
 import DataState from "../components/DataState.jsx";
 import MetricCard from "../components/MetricCard.jsx";
 import CopyableEmail from "../components/CopyableEmail.jsx";
+import TableSkeleton from "../components/TableSkeleton.jsx";
 import { SearchIcon, BuildingIcon, MapPinIcon, PackageIcon } from "../components/icons.jsx";
 
 export default function DashboardPage() {
@@ -95,6 +96,7 @@ export default function DashboardPage() {
         loading={loading}
         error={error}
         isEmpty={!loading && !error && filtered.length === 0}
+        skeleton={<TableSkeleton />}
         emptyText={
           suppliers && suppliers.length > 0
             ? "No suppliers match your search."
