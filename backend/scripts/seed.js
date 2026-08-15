@@ -70,6 +70,12 @@ const supplies = [
   { supplierId: "sup-008", materialId: "mat-005", leadTimeDays: 19, unitCost: 6.4 },
   { supplierId: "sup-009", materialId: "mat-009", leadTimeDays: 13, unitCost: 11.0 },
   { supplierId: "sup-009", materialId: "mat-010", leadTimeDays: 8, unitCost: 2.1 },
+  // Metal/component fabricators picking up an adjacent material each - every
+  // supplier now has at least one real backup, while Aluminum Rim and Brake
+  // Pad stay sole-sourced so the "no backup supplier on file" warning still
+  // has a genuine case to show.
+  { supplierId: "sup-006", materialId: "mat-012", leadTimeDays: 23, unitCost: 66.5 },
+  { supplierId: "sup-008", materialId: "mat-008", leadTimeDays: 15, unitCost: 1.9 },
 ];
 
 // Which materials go into which products, and how many units per finished product.

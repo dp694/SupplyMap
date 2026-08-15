@@ -59,6 +59,14 @@ export function MapPinIcon(props) {
   );
 }
 
+export function ChevronRightIcon(props) {
+  return (
+    <svg {...common} width={16} height={16} {...props}>
+      <polyline points="9 18 15 12 9 6" />
+    </svg>
+  );
+}
+
 export function InboxIcon(props) {
   return (
     <svg {...common} {...props}>

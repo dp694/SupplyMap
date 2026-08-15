@@ -6,7 +6,13 @@ import DataState from "../components/DataState.jsx";
 import MetricCard from "../components/MetricCard.jsx";
 import CopyableEmail from "../components/CopyableEmail.jsx";
 import TableSkeleton from "../components/TableSkeleton.jsx";
-import { SearchIcon, BuildingIcon, MapPinIcon, PackageIcon } from "../components/icons.jsx";
+import {
+  SearchIcon,
+  BuildingIcon,
+  MapPinIcon,
+  PackageIcon,
+  ChevronRightIcon,
+} from "../components/icons.jsx";
 
 export default function DashboardPage() {
   const { data: suppliers, loading, error } = useApi(() => api.getSuppliers(), []);
@@ -112,6 +118,7 @@ export default function DashboardPage() {
                   <th>Region</th>
                   <th>Contact</th>
                   <th>Materials supplied</th>
+                  <th aria-hidden="true"></th>
                 </tr>
               </thead>
               <tbody>
@@ -130,6 +137,11 @@ export default function DashboardPage() {
                     </td>
                     <td>
                       <span className="badge badge--count">{supplier.materialCount}</span>
+                    </td>
+                    <td className="row-chevron-cell">
+                      <span className="row-chevron">
+                        <ChevronRightIcon />
+                      </span>
                     </td>
                   </tr>
                 ))}
